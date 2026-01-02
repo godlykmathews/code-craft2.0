@@ -18,7 +18,7 @@ export const PixelButton = forwardRef<HTMLButtonElement, PixelButtonProps>(
       <button
         ref={ref}
         className={cn(
-          "relative px-4 py-2.5 sm:px-6 sm:py-3 text-[10px] sm:text-xs uppercase tracking-wider font-minecraft",
+          "relative px-3 py-2 sm:px-6 sm:py-3 text-[8px] sm:text-xs uppercase tracking-wider font-minecraft",
           "border-4 border-inventory-border",
           "shadow-[inset_2px_2px_0_rgba(255,255,255,0.4),inset_-2px_-2px_0_rgba(0,0,0,0.4),4px_4px_0_hsl(var(--inventory-border))]",
           "hover:shadow-[inset_2px_2px_0_rgba(255,255,255,0.5),inset_-2px_-2px_0_rgba(0,0,0,0.5),2px_2px_0_hsl(var(--inventory-border))]",

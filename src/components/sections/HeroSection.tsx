@@ -58,7 +58,7 @@ export const HeroSection = () => {
 
       {/* Title content */}
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 md:px-8 text-center pt-20 sm:pt-24">
-        <h1 className="text-5xl sm:text-5xl md:text-5xl lg:text-6xl font-minecraft text-ore-gold text-shadow-pixel mb-4 sm:mb-6 leading-tight p-0.5 sm:p-0">
+        <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-minecraft text-ore-gold text-shadow-pixel mb-4 sm:mb-6 leading-tight p-0.5 sm:p-0">
           CODECRAFT 2.0
         </h1>
         <h2 className="text-xs sm:text-lg md:text-xl font-minecraft text-card-foreground text-shadow-pixel mb-4 sm:mb-6 pt-1 sm:pt-2 px-2">
