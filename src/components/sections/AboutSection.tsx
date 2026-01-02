@@ -5,7 +5,7 @@ export const AboutSection = () => {
   return (
     <section
       id="#about"
-      className="relative py-20 bg-gradient-to-b from-grass-top via-grass-side to-dirt overflow-hidden"
+      className="relative py-12 sm:py-16 md:py-20 bg-gradient-to-b from-grass-top via-grass-side to-dirt overflow-hidden"
     >
       {/* Grass texture top */}
       <div className="absolute top-0 left-0 right-0 h-8 flex">
@@ -18,16 +18,16 @@ export const AboutSection = () => {
         ))}
       </div>
 
-      {/* Decorative blocks */}
-      <div className="absolute left-4 top-1/4">
+      {/* Decorative blocks - hidden on small screens */}
+      <div className="hidden md:block absolute left-4 top-1/4">
         <MinecraftBlock type="grass" size="lg" />
       </div>
-      <div className="absolute right-8 top-1/3">
+      <div className="hidden md:block absolute right-8 top-1/3">
         <MinecraftBlock type="dirt" size="md" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-xl md:text-3xl font-minecraft text-ore-gold text-shadow-pixel text-center mb-12">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <h2 className="text-lg sm:text-xl md:text-3xl font-minecraft text-ore-gold text-shadow-pixel text-center mb-8 sm:mb-12">
           ABOUT
         </h2>
 
@@ -75,32 +75,32 @@ export const AboutSection = () => {
           </PixelCard>
         </div>
 
-        <div className="mt-12 max-w-2xl mx-auto">
+        <div className="mt-8 sm:mt-12 max-w-2xl mx-auto">
           <PixelCard variant="stone">
-            <div className="flex items-center gap-4 flex-wrap justify-center">
-              <div className="text-center">
-                <div className="text-xl font-minecraft text-ore-diamond">
+            <div className="flex items-center gap-3 sm:gap-4 flex-wrap justify-center">
+              <div className="text-center px-2 sm:px-4">
+                <div className="text-base sm:text-xl font-minecraft text-ore-diamond">
                   3 Days
                 </div>
-                <div className="text-xs font-minecraft text-muted-foreground mt-1">
+                <div className="text-[10px] sm:text-xs font-minecraft text-muted-foreground mt-1">
                   Jan 6-8
                 </div>
               </div>
-              <div className="w-px h-12 bg-inventory-border" />
-              <div className="text-center">
-                <div className="text-xl font-minecraft text-ore-gold">
+              <div className="w-px h-8 sm:h-12 bg-inventory-border" />
+              <div className="text-center px-2 sm:px-4">
+                <div className="text-base sm:text-xl font-minecraft text-ore-gold">
                   7:30-8:30 PM
                 </div>
-                <div className="text-xs font-minecraft text-muted-foreground mt-1">
+                <div className="text-[10px] sm:text-xs font-minecraft text-muted-foreground mt-1">
                   Daily
                 </div>
               </div>
-              <div className="w-px h-12 bg-inventory-border" />
-              <div className="text-center">
-                <div className="text-xl font-minecraft text-ore-emerald">
+              <div className="w-px h-8 sm:h-12 bg-inventory-border" />
+              <div className="text-center px-2 sm:px-4">
+                <div className="text-base sm:text-xl font-minecraft text-ore-emerald">
                   Online
                 </div>
-                <div className="text-xs font-minecraft text-muted-foreground mt-1">
+                <div className="text-[10px] sm:text-xs font-minecraft text-muted-foreground mt-1">
                   Kerala
                 </div>
               </div>

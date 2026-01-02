@@ -58,12 +58,12 @@ export const Navigation = () => {
             {/* Mobile button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden w-10 h-10 bg-[url('/textures/oak_planks.png')] "
+              className="md:hidden w-12 h-12 bg-[url('/textures/oak_planks.png')] flex items-center justify-center border-2 border-[#2b1d12] rounded"
             >
-              <div className="space-y-1">
-                <div className={cn("w-5 h-0.5 bg-black transition", isOpen && "rotate-45 translate-y-1.5")} />
-                <div className={cn("w-5 h-0.5 bg-black transition", isOpen && "opacity-0")} />
-                <div className={cn("w-5 h-0.5 bg-black transition", isOpen && "-rotate-45 -translate-y-1.5")} />
+              <div className="flex flex-col items-center justify-center space-y-1.5">
+                <div className={cn("w-6 h-0.5 bg-black transition-all duration-300", isOpen && "rotate-45 translate-y-2")} />
+                <div className={cn("w-6 h-0.5 bg-black transition-all duration-300", isOpen && "opacity-0")} />
+                <div className={cn("w-6 h-0.5 bg-black transition-all duration-300", isOpen && "-rotate-45 -translate-y-2")} />
               </div>
             </button>
           </div>
@@ -71,17 +71,17 @@ export const Navigation = () => {
           {/* Mobile menu */}
           <div
             className={cn(
-              "md:hidden overflow-hidden transition-all duration-300 ",
-              isOpen ? "max-h-96 pb-4" : "max-h-0"
+              "md:hidden overflow-hidden transition-all duration-300",
+              isOpen ? "max-h-[500px] pb-4" : "max-h-0"
             )}
           >
-            <div className="mt-3 bg-green-200 p-2 rounded-lg shadow-[inset_2px_2px_0_rgba(0,0,0,0.3)] border-4 border-green-400">
+            <div className="mt-3 bg-green-200 p-3 rounded-lg shadow-[inset_2px_2px_0_rgba(0,0,0,0.3)] border-4 border-green-400">
               {navItems.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="block px-4 py-3 text-xs font-minecraft text-white hover:bg-green-300/30"
+                  className="block px-4 py-4 text-sm font-minecraft text-white hover:bg-green-300/30 rounded-md active:bg-green-400/40 transition-colors"
                   style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}
                 >
                   {item.label}

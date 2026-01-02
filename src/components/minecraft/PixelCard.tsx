@@ -18,7 +18,7 @@ export const PixelCard = ({ children, variant = "wood", className }: PixelCardPr
   return (
     <div
       className={cn(
-        "relative p-6 border-4",
+        "relative p-4 sm:p-6 border-4",
         "shadow-[inset_3px_3px_0_rgba(255,255,255,0.2),inset_-3px_-3px_0_rgba(0,0,0,0.3),6px_6px_0_rgba(0,0,0,0.4)]",
         variantStyles[variant],
         className

@@ -12,65 +12,64 @@ import alexBE from "@/assets/Alex_BE.webp";
 export const HeroSection = () => {
   return (
     <section className="relative min-h-screen overflow-hidden" style={{ backgroundImage: 'url(/img2.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
-      {/* Floating ore blocks */}
-      {/* Uncomment and update src paths once you add the webp images */}
+      {/* Floating ore blocks - hidden on very small screens, shown on sm and up */}
       <img
         src={oakLeaves}
         alt="oak leaves"
-        className="absolute top-[20%] left-[15%] w-12 md:w-16 animate-float"
+        className="hidden sm:block absolute top-[20%] left-[5%] sm:left-[15%] w-8 sm:w-12 md:w-16 animate-float"
         style={{ imageRendering: "pixelated" }}
       />
       <img
         src={knowledgeBook}
         alt="knowledge book"
-        className="absolute top-[25%] right-[15%] w-12 md:w-16 animate-float-delayed"
+        className="hidden sm:block absolute top-[25%] right-[5%] sm:right-[15%] w-8 sm:w-12 md:w-16 animate-float-delayed"
         style={{ imageRendering: "pixelated" }}
       />
       <img
         src={whiteGlazedTerracotta}
         alt="white glazed terracotta"
-        className="absolute top-[30%] left-[8%] w-16 md:w-20 animate-float-slow"
+        className="hidden md:block absolute top-[40%] left-[3%] w-16 md:w-20 animate-float-slow"
         style={{ imageRendering: "pixelated" }}
       />
       <img
         src={wolfDungeons}
         alt="wolf"
-        className="absolute top-[60%] right-[20%] w-12 md:w-36 animate-float"
+        className="absolute top-[70%] sm:top-[60%] right-[3%] sm:right-[20%] w-16 sm:w-20 md:w-36 animate-float"
         style={{ imageRendering: "pixelated" }}
       />
       <img
         src={beeDungeons}
         alt="bee"
-        className="absolute top-[20%] left-[50%] -translate-x-1/2 w-10 md:w-12 animate-float-delayed "
+        className="absolute top-[32%] sm:top-[20%] left-[50%] -translate-x-1/2 w-10 sm:w-10 md:w-12 animate-float-delayed"
         style={{ imageRendering: "pixelated" }}
       />
       <img
         src={alexBE}
         alt="alex"
-        className="absolute top-[40%] right-[8%] w-12 md:w-16 animate-float-slow"
+        className="hidden md:block absolute top-[40%] right-[8%] w-12 md:w-16 animate-float-slow"
         style={{ imageRendering: "pixelated" }}
       />
       <img
         src="/Villager.webp"
         alt="villager"
-        className="absolute top-[50%] left-[15%] -translate-y-1/2 w-16 md:w-24 animate-float"
+        className="absolute top-[50%] left-[3%] sm:left-[15%] -translate-y-1/2 w-16 sm:w-16 md:w-24 animate-float"
         style={{ imageRendering: "pixelated" }}
       />
 
       {/* Title content */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 text-center">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-minecraft text-ore-gold text-shadow-pixel mb-4">
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 md:px-8 text-center pt-20 sm:pt-24">
+        <h1 className="text-5xl sm:text-5xl md:text-5xl lg:text-6xl font-minecraft text-ore-gold text-shadow-pixel mb-4 sm:mb-6 leading-tight p-0.5 sm:p-0">
           CODECRAFT 2.0
         </h1>
-        <h2 className="text-lg md:text-xl lg:text-xl font-minecraft text-card-foreground text-shadow-pixel mb-4 pt-2">
+        <h2 className="text-xs sm:text-lg md:text-xl font-minecraft text-card-foreground text-shadow-pixel mb-4 sm:mb-6 pt-1 sm:pt-2 px-2">
           THREE-DAY CODING BOOTCAMP
         </h2>
-        <p className="hidden sm:block text-base sm:text-sm md:text-lg font-minecraft text-white mb-12 max-w-3xl">
+        <p className="hidden sm:block text-sm md:text-lg font-minecraft text-white mb-8 sm:mb-12 max-w-xl md:max-w-2xl lg:max-w-3xl px-2 leading-relaxed">
           CodeCraft 2.0, a three-day coding bootcamp from Jan 6 to Jan 8, 2026,
           challenges aspiring coders. Implement your ideas, compete in
           challenges, and network with peers.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto px-4 sm:px-0">
           <PixelButton
             variant="grass"
             onClick={() =>
