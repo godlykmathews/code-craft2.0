@@ -39,7 +39,7 @@ export const Navigation = () => {
                   href={item.href}
                   className={cn(
                     "relative px-4 py-2 text-xs font-minecraft",
-                    "bg-[url('/textures/leaves_oak.png')] bg-cover",
+                    "bg-[#362310] bg-cover",
                     "text-white border-2 border-[#2e5a2e]",
                     "shadow-md transition-all duration-200",
                     "hover:-translate-y-1 hover:rotate-[-1deg] hover:shadow-lg",
