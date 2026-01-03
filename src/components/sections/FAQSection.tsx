@@ -3,34 +3,29 @@ import { cn } from "@/lib/utils";
 
 const faqData = [
   {
-    question: "When is CodeCraft 2.0?",
+    question: "Is it an offline or online event?",
     answer:
-      "CodeCraft 2.0 runs from January 6 to January 8, 2026, daily from 7:30 PM to 8:30 PM. It's a three-day online coding bootcamp.",
+      "It's an online event! So, you can attend in your PJs, on your couch, and no one will ever know. Bonus: zero commute, 100% comfort!",
   },
   {
-    question: "Who can participate?",
+    question: "Do we need previous experience in Python?",
     answer:
-      "CodeCraft is open to all aspiring coders across Kerala who want to learn Python Turtle graphics and participate in coding challenges.",
+      "Not at all! Whether you're a Python pro or think Python is just a type of snake, you're welcome. We'll guide you through it, no anti-venom required!",
   },
   {
-    question: "What will I learn?",
+    question: "Is this a paid event?",
     answer:
-      "You'll learn Python Turtle graphics, transform code into visual designs, strengthen Python fundamentals, and participate in structured coding challenges.",
+      "Nope, it's completely free! Your wallet can stay in its comfy corner while you enjoy the event—no financial gymnastics required!",
   },
   {
-    question: "How do I register?",
+    question: "Will certificates be provided?",
     answer:
-      "Registrations open on December 31st when the portal opens. Click the Register Now button to sign up for this exciting bootcamp!",
+      "Yes, certificates will be provided! You'll have official proof that you survived and thrived—perfect for framing or humble-bragging!",
   },
   {
-    question: "Is there a fee?",
+    question: "Can I register on the day of the event?",
     answer:
-      "Please check the registration portal for details about participation fees and any available scholarships or discounts.",
-  },
-  {
-    question: "Who is hosting this event?",
-    answer:
-      "CodeCraft is hosted on Python Library Joy and conducted in collaboration with IEDC BOOTCAMP CEC, IEDC CEK, IEDC GEC, IEDC VISAT, FOCES CEC, and IEDC RIT.",
+      "Sorry, no last-minute rush! We need a bit more time to get everything ready. So, make sure you register in advance—no fashionably late entries here!",
   },
 ];
 
