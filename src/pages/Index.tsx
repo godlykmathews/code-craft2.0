@@ -22,7 +22,7 @@ const Index = () => {
         </section>
         
         <section id="leaderboard">
-         
+         <LeaderboardSection />
         </section>
         
         <section id="timeline">
