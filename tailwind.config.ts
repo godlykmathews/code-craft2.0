@@ -2,7 +2,12 @@ import type { Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -14,7 +19,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        minecraft: ['"Press Start 2P"', 'cursive'],
+        minecraft: ['"Press Start 2P"', "cursive"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -117,12 +122,17 @@ export default {
           "50%": { opacity: "1" },
           "75%": { opacity: "0.6" },
         },
+        shimmer: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(100%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         float: "float 3s ease-in-out infinite",
         "torch-flicker": "torch-flicker 2s ease-in-out infinite",
+        shimmer: "shimmer 2s infinite",
       },
     },
   },
